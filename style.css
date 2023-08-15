@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+.logo {
+  width: 50vw;
+  height: 50vw;
+  border-top: 25vw solid #fff;
+  border-left: 25vw solid #fff;
+  border-right: 25vw solid #000;
+  border-bottom: 25vw solid #000;
+}
+
+.logo img {
+  width: 25vw;
+  margin-top: -25vw;
+  margin-left: -25vw;
+}
+
+.main {
+  position: absolute;
+  width: 42vw;
+  right: 0;
+  top: 50vh;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.main div {
+  padding-right: 5vw;
+}
+
+.main p {
+  font-size: 1.5vw;
+  line-height: 1.4;
+  margin-bottom: 2vw;
+}
+
+.btn {
+  padding: 1vw 3vw;
+  color: #fff;
+  font-size: 2.5vw;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid #fff;
+  border-radius: 1vw;
+  box-shadow: 0 0 30px rgb(255, 87, 188), inset 0 0 30px rgb(255, 87, 188);
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1250px) {
+  h1 {
+    font-size: 3vw;
+  }
+
+  .main {
+    width: 70vw;
+  }
+
+  .main p {
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 70vw;
+    height: 70vw;
+    border-top: 35vw solid #fff;
+    border-left: 35vw solid #fff;
+    border-right: 35vw solid #000;
+    border-bottom: 35vw solid #000;
+  }
+
+  .logo img {
+    width: 35vw;
+    margin-top: -35vw;
+    margin-left: -35vw;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  .btn {
+    font-size: 4vw;
+  }
+
+  .main {
+    width: 100vw;
+  }
+
+  .main p {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+}
